@@ -759,15 +759,11 @@ F 3 "" H 1775 11250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2050 12250 1800 12250
-Wire Wire Line
 	1250 11250 1775 11250
 Wire Wire Line
 	1250 12250 1800 12250
 Wire Wire Line
 	1775 11250 2175 11250
-Wire Wire Line
-	2075 12250 2175 12250
 $Comp
 L 74xx:74LS32 U?
 U 5 1 66470EA7
@@ -926,4 +922,6 @@ Wire Wire Line
 Connection ~ 6400 12250
 Wire Wire Line
 	6400 12250 10925 12250
+Wire Wire Line
+	1800 12250 2175 12250
 $EndSCHEMATC

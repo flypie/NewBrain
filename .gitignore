@@ -1,0 +1,6 @@
+*.sch-bak
+/NewBrain Original KiCad/*.sch-bak
+*.kicad_pcb-bak
+/NewBrain Original KiCad/NewBrain Original.bin
+/NewBrain Original KiCad/gui_defaults.par
+/NewBrain Original KiCad/*.dsn
