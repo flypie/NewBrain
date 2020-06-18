@@ -48,8 +48,6 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 4850 2200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2000 1450 1050 1450
-Text Label 1050 1450 0    50   ~ 0
-BOL
 Wire Wire Line
 	2000 1650 1075 1650
 Text Label 1075 1650 0    50   ~ 0
@@ -554,8 +552,6 @@ Wire Wire Line
 Wire Wire Line
 	3900 8425 4700 8425
 Wire Wire Line
-	3900 8325 4175 8325
-Wire Wire Line
 	1775 8050 2275 8050
 Wire Wire Line
 	2275 10025 4125 10025
@@ -586,12 +582,12 @@ Wire Wire Line
 $Comp
 L power:VCC #PWR0106
 U 1 1 5EEBA9A4
-P 5200 7525
-F 0 "#PWR0106" H 5200 7375 50  0001 C CNN
-F 1 "VCC" V 5175 7675 50  0000 L CNN
-F 2 "" H 5200 7525 50  0001 C CNN
-F 3 "" H 5200 7525 50  0001 C CNN
-	1    5200 7525
+P 5500 7525
+F 0 "#PWR0106" H 5500 7375 50  0001 C CNN
+F 1 "VCC" V 5475 7675 50  0000 L CNN
+F 2 "" H 5500 7525 50  0001 C CNN
+F 3 "" H 5500 7525 50  0001 C CNN
+	1    5500 7525
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -606,8 +602,6 @@ Wire Wire Line
 	2600 9525 2600 9425
 Wire Wire Line
 	2600 9425 2700 9425
-Text Label 2600 9475 2    50   ~ 0
-DO
 Wire Wire Line
 	1275 9250 1275 9450
 Wire Wire Line
@@ -645,34 +639,6 @@ Wire Wire Line
 	2600 8025 2600 7425
 Wire Wire Line
 	2600 7425 4175 7425
-$Comp
-L Device:R R61
-U 1 1 5EEE0DAF
-P 4600 7525
-F 0 "R61" V 4350 7525 50  0000 C CNN
-F 1 "22k" V 4450 7525 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical" V 4530 7525 50  0001 C CNN
-F 3 "~" H 4600 7525 50  0001 C CNN
-	1    4600 7525
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4750 7525 5200 7525
-Wire Wire Line
-	4175 8325 4175 8025
-Connection ~ 4175 8025
-Wire Wire Line
-	2700 7925 2700 7825
-Connection ~ 2700 7825
-Wire Wire Line
-	2700 7825 2700 7525
-Wire Wire Line
-	2700 7525 4175 7525
-Wire Wire Line
-	4175 7525 4175 8025
-Connection ~ 4175 7525
-Wire Wire Line
-	4175 7525 4450 7525
 Wire Wire Line
 	1775 9250 2000 9250
 Wire Wire Line
@@ -742,11 +708,7 @@ Wire Wire Line
 Wire Wire Line
 	6025 6450 7300 6450
 Wire Wire Line
-	7225 6250 7225 5950
-Wire Wire Line
 	7225 5950 7425 5950
-Wire Wire Line
-	7025 6250 7225 6250
 $Comp
 L 74xx:74LS90 U458
 U 1 1 5EFAE820
@@ -862,8 +824,6 @@ Text Label 6375 4525 3    50   ~ 0
 LAB-0
 Wire Wire Line
 	6800 2425 7050 2425
-Text Label 8075 2425 0    50   ~ 0
-FS
 $Comp
 L 74xx:74LS04 U439
 U 5 1 5F1E2484
@@ -1487,8 +1447,6 @@ Wire Wire Line
 	18925 2550 18775 2550
 Wire Wire Line
 	19700 2650 20300 2650
-Text Label 18925 1950 2    50   ~ 0
-TPIN
 $Comp
 L Device:D U107
 U 1 1 5F9BEB27
@@ -2059,19 +2017,7 @@ Connection ~ 7100 7550
 Wire Wire Line
 	7100 7550 7100 8225
 Wire Wire Line
-	7225 8550 7200 8550
-Connection ~ 7225 6250
-Wire Wire Line
 	7575 7750 7575 7675
-Wire Wire Line
-	7575 7675 7225 7675
-Wire Wire Line
-	7225 6250 7225 7675
-Connection ~ 7225 7675
-Wire Wire Line
-	7225 7675 7225 8550
-Wire Wire Line
-	7200 8850 7200 8550
 Wire Wire Line
 	7025 5950 7150 5950
 Wire Wire Line
@@ -2084,8 +2030,6 @@ Text Label 8300 6850 2    50   ~ 0
 UCR
 Connection ~ 7300 6250
 Wire Wire Line
-	7025 6150 7025 6250
-Wire Wire Line
 	7025 7425 7850 7425
 Wire Wire Line
 	7850 7425 7850 7675
@@ -2093,9 +2037,6 @@ Wire Wire Line
 	7850 9275 8250 9275
 Wire Wire Line
 	8250 9275 8250 9775
-Connection ~ 7025 6250
-Wire Wire Line
-	7025 6250 7025 7425
 Wire Wire Line
 	7475 8350 7475 9400
 Wire Wire Line
@@ -2445,8 +2386,6 @@ Wire Wire Line
 Connection ~ 14400 12350
 Wire Wire Line
 	14400 12350 13950 12350
-Text Label 13925 11825 2    50   ~ 0
-~FRMR
 $Comp
 L Device:R R123
 U 1 1 60E596E4
@@ -2491,8 +2430,6 @@ Wire Wire Line
 	14400 12450 14400 12575
 Wire Wire Line
 	14400 12575 14100 12575
-Text Label 14100 12575 2    50   ~ 0
-~CLCLK
 $Comp
 L 74xx:74LS11 U465
 U 1 1 60EF9D70
@@ -2568,8 +2505,6 @@ Wire Wire Line
 	11850 11575 7100 11575
 Wire Wire Line
 	15525 12400 15675 12400
-Text Label 15675 12400 0    50   ~ 0
-~CLKINT
 Wire Wire Line
 	15575 9000 15750 9000
 $Comp
@@ -2687,8 +2622,6 @@ Wire Wire Line
 	16350 9575 16450 9575
 Wire Wire Line
 	15300 7075 16350 7075
-Text Label 16350 8425 0    50   ~ 0
-TVP
 $Comp
 L 74xx:74LS04 U450
 U 2 1 61756F7B
@@ -3114,8 +3047,6 @@ F 3 "" H 17750 7250 50  0001 C CNN
 	1    17750 7250
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	8100 10400 1300 10400
 $Comp
 L 74xx:74LS32 U463
 U 2 1 62681652
@@ -3129,8 +3060,6 @@ F 3 "74xx/74ls86.pdf" H 1700 11800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1400 11700 1300 11700
-Wire Wire Line
-	1300 10400 1300 11700
 Wire Wire Line
 	2250 11750 2250 11800
 Wire Wire Line
@@ -3209,7 +3138,7 @@ Wire Wire Line
 Wire Wire Line
 	2175 10900 4300 10900
 Wire Wire Line
-	5925 10650 2025 10650
+	5925 10650 3925 10650
 Wire Wire Line
 	2025 10650 2025 11550
 Wire Wire Line
@@ -3725,15 +3654,15 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0236
 U 1 1 666D723E
-P 17375 2850
-F 0 "#PWR0236" H 17375 2600 50  0001 C CNN
-F 1 "GND" V 17375 2700 50  0000 R CNN
-F 2 "" H 17375 2850 50  0001 C CNN
-F 3 "" H 17375 2850 50  0001 C CNN
-	1    17375 2850
-	1    0    0    -1  
+P 17375 2250
+F 0 "#PWR0236" H 17375 2000 50  0001 C CNN
+F 1 "GND" V 17375 2100 50  0000 R CNN
+F 2 "" H 17375 2250 50  0001 C CNN
+F 3 "" H 17375 2250 50  0001 C CNN
+	1    17375 2250
+	-1   0    0    1   
 $EndComp
-Text Label 17375 2250 0    50   ~ 0
+Text Label 17375 2850 0    50   ~ 0
 V0
 $Comp
 L power:GND #PWR0243
@@ -3760,17 +3689,6 @@ $EndComp
 NoConn ~ 1275 8050
 NoConn ~ 1275 8250
 NoConn ~ 1775 8150
-$Comp
-L power:VCC #PWR0245
-U 1 1 66EF120A
-P 4000 9125
-F 0 "#PWR0245" H 4000 8975 50  0001 C CNN
-F 1 "VCC" H 4025 9325 50  0000 C CNN
-F 2 "" H 4000 9125 50  0001 C CNN
-F 3 "" H 4000 9125 50  0001 C CNN
-	1    4000 9125
-	0    1    1    0   
-$EndComp
 $Comp
 L power:VCC #PWR0246
 U 1 1 66EF3F6F
@@ -3814,8 +3732,6 @@ Text GLabel 4700 8425 2    50   Input ~ 0
 ~CTSP
 Text GLabel 4700 9275 2    50   Input ~ 0
 ~RTSD
-Text GLabel 4175 7425 2    50   Input ~ 0
-RDDK
 Text GLabel 4700 9625 2    50   Input ~ 0
 PO
 NoConn ~ 2700 9325
@@ -3904,7 +3820,7 @@ LAB-7
 Text Label 1150 5025 2    50   ~ 0
 LAB-0
 Text Label 5975 2525 2    50   ~ 0
-LAB-8
+LAB-7
 $Comp
 L Connector_Generic:Conn_02x03_Top_Bottom J12
 U 1 1 5F25D89A
@@ -3936,8 +3852,6 @@ Text GLabel 13575 7075 0    50   Input ~ 0
 FP
 Text GLabel 9925 2575 0    50   Input ~ 0
 RV
-Text Label 11900 4875 0    50   ~ 0
-LAB-7
 Text GLabel 4125 1650 0    50   Input ~ 0
 ~VDLD
 Text GLabel 3200 1050 2    50   Input ~ 0
@@ -3961,4 +3875,94 @@ Text GLabel 3375 2000 0    50   Input ~ 0
 GR
 Text GLabel 13550 6175 0    50   Input ~ 0
 GR
+Text GLabel 13925 11825 0    50   Input ~ 0
+~FRMR
+Text GLabel 16350 8425 2    50   Input ~ 0
+TVP
+Text GLabel 15675 12400 2    50   Input ~ 0
+~CLKINT
+Text GLabel 18925 1950 0    50   Input ~ 0
+TPIN
+Text GLabel 2600 9475 0    50   Input ~ 0
+DO
+Text GLabel 14100 12575 0    50   Input ~ 0
+~CLCLK
+NoConn ~ 18425 5900
+NoConn ~ 18450 6725
+Wire Wire Line
+	8100 10375 1300 10375
+Connection ~ 8100 10375
+Wire Wire Line
+	1300 10375 1300 11700
+Text GLabel 1050 1450 0    50   Input ~ 0
+80L
+Text GLabel 8075 2425 2    50   Input ~ 0
+FS
+Wire Wire Line
+	7025 6150 7100 6150
+Wire Wire Line
+	7100 6150 7100 6400
+Wire Wire Line
+	7100 6400 7025 6400
+Wire Wire Line
+	7025 6400 7025 7425
+Wire Wire Line
+	7025 6250 7025 6325
+Wire Wire Line
+	7025 6325 6900 6325
+Wire Wire Line
+	6900 7675 7575 7675
+Wire Wire Line
+	6900 6325 6900 7675
+Wire Wire Line
+	7200 8850 7200 8475
+Wire Wire Line
+	7200 8475 6900 8475
+Wire Wire Line
+	6900 8475 6900 7675
+Connection ~ 6900 7675
+Wire Wire Line
+	7025 6250 7225 6250
+Wire Wire Line
+	7225 6250 7225 5950
+Connection ~ 7025 6250
+Wire Wire Line
+	3925 11450 3925 10650
+Connection ~ 3925 11450
+Connection ~ 3925 10650
+Wire Wire Line
+	3925 10650 2025 10650
+Text Label 4175 7425 0    50   ~ 0
+RDDK
+Wire Wire Line
+	2700 7925 2500 7925
+Wire Wire Line
+	2500 7925 2500 7525
+$Comp
+L Device:R_Network03 RN66
+U 1 1 62260EA2
+P 5300 7625
+F 0 "RN66" V 4925 7625 50  0000 C CNN
+F 1 "R_Network03" V 5025 7625 50  0000 C CNN
+F 2 "Resistor_THT:R_Array_SIP5" V 5575 7625 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 5300 7625 50  0001 C CNN
+	1    5300 7625
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5100 7625 4175 7625
+Wire Wire Line
+	4175 7625 4175 8025
+Wire Wire Line
+	2500 7525 5100 7525
+Wire Wire Line
+	4375 8325 4375 7725
+Wire Wire Line
+	4375 7725 5100 7725
+Wire Wire Line
+	3900 8325 4375 8325
+Text GLabel 4000 9125 2    50   Input ~ 0
++12
+Text GLabel 2700 9125 0    50   Input ~ 0
+-12I
 $EndSCHEMATC
