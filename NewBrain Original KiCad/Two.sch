@@ -126,7 +126,7 @@ $EndComp
 Wire Wire Line
 	6750 1475 6425 1475
 Text Label 5825 1375 2    50   ~ 0
-~RFRSH
+~RFSH
 Text Label 5825 1475 2    50   ~ 0
 AB-15G
 Text Label 5825 1575 2    50   ~ 0
@@ -157,8 +157,6 @@ F 3 "" H 6275 1850 50  0001 C CNN
 	1    6275 1850
 	0    1    1    0   
 $EndComp
-Text Label 6750 1575 2    50   ~ 0
-~MREQ
 Text Label 6750 1675 2    50   ~ 0
 RAMINH
 Wire Wire Line
@@ -1134,8 +1132,6 @@ F 3 "https://www.mouser.co.uk/datasheet/2/450/ps0178-19386.pdf" H 22025 7325 50 
 $EndComp
 Wire Wire Line
 	22275 5775 22350 5775
-Text Label 22350 5500 1    50   ~ 0
-33E
 Wire Wire Line
 	22275 5875 22450 5875
 $Comp
@@ -1691,12 +1687,8 @@ Wire Wire Line
 Connection ~ 21850 10650
 Wire Wire Line
 	21850 10650 22175 10650
-Text Label 21300 10650 2    50   ~ 0
-GRND
 Wire Wire Line
 	19275 5800 19425 5800
-Text Label 19425 5800 0    50   ~ 0
-GRND
 Wire Wire Line
 	23500 9850 23500 9125
 Connection ~ 23500 9125
@@ -1972,8 +1964,6 @@ Wire Wire Line
 Connection ~ 21850 12775
 Wire Wire Line
 	21850 12775 22175 12775
-Text Label 21300 12775 2    50   ~ 0
-GRND
 Wire Wire Line
 	23500 11975 23500 11250
 Connection ~ 23500 11250
@@ -2432,16 +2422,12 @@ Text Label 21250 16975 0    50   ~ 0
 K6
 Wire Wire Line
 	19900 17525 21250 17525
-Text Label 21250 17525 0    50   ~ 0
-~RD
 Wire Wire Line
 	19900 17425 21250 17425
 Text Label 21250 17425 0    50   ~ 0
 ~COP
 Wire Wire Line
 	19900 17325 21250 17325
-Text Label 21250 17325 0    50   ~ 0
-~WR
 Wire Wire Line
 	19900 16525 19950 16525
 Text Label 19950 16525 0    50   ~ 0
@@ -2498,10 +2484,6 @@ F 3 "" H 20375 16775 50  0001 C CNN
 	1    20375 16775
 	0    1    -1   0   
 $EndComp
-Text Label 19050 16525 2    50   ~ 0
-TDI
-Text Label 19900 17075 0    50   ~ 0
-TDO
 $Comp
 L Device:R R112
 U 1 1 627AC397
@@ -2595,8 +2577,6 @@ Wire Wire Line
 Connection ~ 19775 11825
 Wire Wire Line
 	19775 11825 19875 11825
-Text Label 19625 11825 2    50   ~ 0
-GRND
 Wire Wire Line
 	19900 16625 21775 16625
 Wire Wire Line
@@ -2667,8 +2647,6 @@ F 3 "" H 22825 15800 50  0001 C CNN
 	1    22825 15800
 	1    0    0    -1  
 $EndComp
-Text Label 22925 15500 0    50   ~ 0
-~TM1
 $Comp
 L 74xx:74LS00 U418
 U 1 1 62D89841
@@ -2720,8 +2698,6 @@ F 3 "" H 22825 15025 50  0001 C CNN
 	1    22825 15025
 	1    0    0    -1  
 $EndComp
-Text Label 22925 14725 0    50   ~ 0
-~TM2
 Wire Wire Line
 	21775 15600 21700 15600
 Wire Wire Line
@@ -3682,8 +3658,6 @@ Wire Wire Line
 Connection ~ 5575 17625
 Wire Wire Line
 	5575 17625 5625 17625
-Text Label 5575 17750 3    50   ~ 0
-RD0
 Wire Wire Line
 	5500 17525 5500 17750
 Connection ~ 5500 17525
@@ -3713,20 +3687,6 @@ Wire Wire Line
 Connection ~ 5350 17325
 Wire Wire Line
 	5350 17325 4950 17325
-Text Label 5500 17750 3    50   ~ 0
-RD1
-Text Label 5425 17750 3    50   ~ 0
-RD2
-Text Label 5350 17750 3    50   ~ 0
-RD3
-Text Label 5275 17750 3    50   ~ 0
-RD4
-Text Label 5200 17750 3    50   ~ 0
-RD5
-Text Label 5125 17750 3    50   ~ 0
-RD6
-Text Label 5050 17750 3    50   ~ 0
-RD7
 Connection ~ 5125 17025
 Wire Wire Line
 	5125 17025 5625 17025
@@ -3788,11 +3748,9 @@ Wire Wire Line
 Wire Wire Line
 	13775 19550 13775 19250
 Text Label 14175 19950 1    50   ~ 0
-~RFRSH
+~RFSH
 Wire Wire Line
 	14075 19950 13975 19950
-Text Label 13975 19950 1    50   ~ 0
-~MREQ
 Text Label 13975 20950 3    50   ~ 0
 ~ROM0
 Text Label 14075 20950 3    50   ~ 0
@@ -3849,12 +3807,12 @@ $EndComp
 $Comp
 L power:GND #PWR0194
 U 1 1 62E944E8
-P 13650 20450
-F 0 "#PWR0194" H 13650 20200 50  0001 C CNN
-F 1 "GND" H 13675 20225 50  0000 C CNN
-F 2 "" H 13650 20450 50  0001 C CNN
-F 3 "" H 13650 20450 50  0001 C CNN
-	1    13650 20450
+P 13675 20450
+F 0 "#PWR0194" H 13675 20200 50  0001 C CNN
+F 1 "GND" H 13700 20225 50  0000 C CNN
+F 2 "" H 13675 20450 50  0001 C CNN
+F 3 "" H 13675 20450 50  0001 C CNN
+	1    13675 20450
 	0    1    1    0   
 $EndComp
 $Comp
@@ -4100,33 +4058,31 @@ RV
 Text Label 12575 19925 1    50   ~ 0
 ~EXP1
 Text Label 12375 19925 1    50   ~ 0
-AB0
+AB-0
 Text Label 12275 19925 1    50   ~ 0
-AB1
+AB-1
 Text Label 12075 19925 1    50   ~ 0
-~EXP2
+~EXP0
 Text Label 11875 19925 1    50   ~ 0
-AB0
+AB-0
 Text Label 11775 19925 1    50   ~ 0
-AB1
+AB-1
 Text Label 9650 20925 3    50   ~ 0
 CTR
 Text Label 9750 20925 3    50   ~ 0
 CIA
 Text Label 10250 20925 3    50   ~ 0
-EXP1
+~EXP1
 Text Label 10350 20925 3    50   ~ 0
-EXP0
+~EXP0
 Text Label 9850 20925 3    50   ~ 0
 ~VST
 Text Label 9950 20925 3    50   ~ 0
 ~ANIN
-Text Label 10050 20925 3    50   ~ 0
-~TVTL
 Text Label 10150 20925 3    50   ~ 0
 ~TVL
 Text Label 11775 20925 3    50   ~ 0
-~CLCSA
+~CLUSA
 Text Label 11875 20925 3    50   ~ 0
 ~ENRG2
 Text Label 11975 20925 3    50   ~ 0
@@ -4138,7 +4094,7 @@ Text Label 12275 20925 3    50   ~ 0
 Text Label 12375 20925 3    50   ~ 0
 ~CLDMA
 Text Label 12475 20925 3    50   ~ 0
-~COG
+~COP
 Text Label 12575 20925 3    50   ~ 0
 ~ENRG1
 $Comp
@@ -4174,8 +4130,6 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS06" H 7750 20500 50  0001 C CNN
 	1    7750 20500
 	1    0    0    -1  
 $EndComp
-Text Label 8050 20500 0    50   ~ 0
-~INT
 Text Label 6250 20300 2    50   ~ 0
 ~CLK
 Text Label 6250 20500 2    50   ~ 0
@@ -4193,8 +4147,6 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS86" H 4675 7250 50  0001 C CNN
 	2    4675 7250
 	-1   0    0    1   
 $EndComp
-Text Label 4975 7250 0    50   ~ 0
-~MREQ
 Text Label 4975 7150 0    50   ~ 0
 RAMINH
 Wire Wire Line
@@ -4495,8 +4447,6 @@ F 3 "" H 8400 5775 50  0001 C CNN
 	1    8400 5775
 	-1   0    0    1   
 $EndComp
-Text Label 6625 17825 0    50   ~ 0
-~RD
 Text Label 6625 17925 0    50   ~ 0
 ~CPRQG
 $Comp
@@ -4653,23 +4603,23 @@ $EndComp
 Text GLabel 9625 19250 3    50   Input ~ 0
 ~RTSD
 Text GLabel 9725 19250 3    50   Input ~ 0
-D0
+DB-0
 Text GLabel 9525 19250 3    50   Input ~ 0
-P0
+PO
 Text GLabel 9925 19250 3    50   Input ~ 0
 ~CLK
 Text GLabel 9825 19250 3    50   Input ~ 0
 TVP
 Text GLabel 9650 19925 1    50   Input ~ 0
-~IORQ
+~IOREQ
 Text GLabel 9025 18250 1    50   Input ~ 0
-~RST
+~RESET
 Text GLabel 10150 19925 1    50   Input ~ 0
-AB4
+AB-4
 Text GLabel 10250 19925 1    50   Input ~ 0
-AB3
+AB-3
 Text GLabel 10350 19925 1    50   Input ~ 0
-AB2
+AB-2
 Text GLabel 9750 19925 1    50   Input ~ 0
 PRTOV
 Text GLabel 9850 19925 1    50   Input ~ 0
@@ -4731,4 +4681,108 @@ Text Label 16250 3000 2    50   ~ 0
 ~ROM1
 Text Label 18125 3300 2    50   ~ 0
 ~ROM0
+NoConn ~ 14675 20950
+NoConn ~ 14575 20950
+NoConn ~ 14475 20950
+NoConn ~ 14375 20950
+NoConn ~ 14275 20950
+Text GLabel 22350 5500 1    50   Input ~ 0
+~M1
+Text GLabel 6750 1575 0    50   Input ~ 0
+~MREQ
+Text GLabel 13975 19950 1    50   Input ~ 0
+~MREQ
+Text GLabel 21250 17525 2    50   Input ~ 0
+~RD
+Text GLabel 21250 17325 2    50   Input ~ 0
+~WR
+Text GLabel 6625 17825 2    50   Input ~ 0
+~RD
+$Comp
+L power:GND #PWR0205
+U 1 1 5F3C26FF
+P 6125 18225
+F 0 "#PWR0205" H 6125 17975 50  0001 C CNN
+F 1 "GND" H 6150 18000 50  0000 C CNN
+F 2 "" H 6125 18225 50  0001 C CNN
+F 3 "" H 6125 18225 50  0001 C CNN
+	1    6125 18225
+	1    0    0    -1  
+$EndComp
+Text GLabel 5050 17750 3    50   Input ~ 0
+RD7
+Text GLabel 5125 17750 3    50   Input ~ 0
+RD6
+Text GLabel 5200 17750 3    50   Input ~ 0
+RD5
+Text GLabel 5275 17750 3    50   Input ~ 0
+RD4
+Text GLabel 5350 17750 3    50   Input ~ 0
+RD3
+Text GLabel 5425 17750 3    50   Input ~ 0
+RD2
+Text GLabel 5500 17750 3    50   Input ~ 0
+RD1
+Text GLabel 5575 17750 3    50   Input ~ 0
+RD0
+NoConn ~ 14075 18250
+NoConn ~ 13975 18250
+Text GLabel 8050 20500 2    50   Input ~ 0
+~INT
+NoConn ~ 14075 19250
+Text GLabel 22925 15500 2    50   Input ~ 0
+~TM1
+Text GLabel 22925 14725 2    50   Input ~ 0
+~TM2
+NoConn ~ 11975 18250
+Text GLabel 10050 20925 3    50   Input ~ 0
+~TVTL
+$Comp
+L power:GND #PWR0208
+U 1 1 5FBB8C3A
+P 21300 10650
+F 0 "#PWR0208" H 21300 10400 50  0001 C CNN
+F 1 "GND" H 21325 10450 50  0000 C CNN
+F 2 "" H 21300 10650 50  0001 C CNN
+F 3 "" H 21300 10650 50  0001 C CNN
+	1    21300 10650
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0249
+U 1 1 5FCD22CF
+P 19625 11825
+F 0 "#PWR0249" H 19625 11575 50  0001 C CNN
+F 1 "GND" H 19650 11625 50  0000 C CNN
+F 2 "" H 19625 11825 50  0001 C CNN
+F 3 "" H 19625 11825 50  0001 C CNN
+	1    19625 11825
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0250
+U 1 1 5FD5DA69
+P 21300 12775
+F 0 "#PWR0250" H 21300 12525 50  0001 C CNN
+F 1 "GND" H 21325 12575 50  0000 C CNN
+F 2 "" H 21300 12775 50  0001 C CNN
+F 3 "" H 21300 12775 50  0001 C CNN
+	1    21300 12775
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0251
+U 1 1 5FDF392B
+P 19425 5800
+F 0 "#PWR0251" H 19425 5550 50  0001 C CNN
+F 1 "GND" H 19450 5600 50  0000 C CNN
+F 2 "" H 19425 5800 50  0001 C CNN
+F 3 "" H 19425 5800 50  0001 C CNN
+	1    19425 5800
+	0    -1   -1   0   
+$EndComp
+Text GLabel 19050 16525 0    50   Input ~ 0
+TDI
+Text GLabel 19900 17075 2    50   Input ~ 0
+TDO
 $EndSCHEMATC

@@ -222,17 +222,6 @@ Wire Wire Line
 Wire Wire Line
 	1825 2725 1825 2575
 $Comp
-L 2732-memory_eprom:2716-Memory_EPROM U453
-U 1 1 5EFE9032
-P 1575 4925
-F 0 "U453" H 1875 5050 59  0000 C CNN
-F 1 "2716-Memory_EPROM" H 1625 5425 59  0001 L BNN
-F 2 "Package_DIP:DIP-24_W10.16mm_LongPads" H 1625 6025 50  0001 C CNN
-F 3 "" H 1975 4175 50  0001 C CNN
-	1    1575 4925
-	1    0    0    -1  
-$EndComp
-$Comp
 L 74xx:74LS32 U456
 U 1 1 5F00A0E2
 P 3450 3775
@@ -304,8 +293,6 @@ Text Label 3550 3050 0    50   ~ 0
 RC0
 Wire Wire Line
 	1375 5025 1150 5025
-Text Label 1150 5025 0    50   ~ 0
-AB-0
 Wire Wire Line
 	1375 5125 1150 5125
 Text Label 1150 5125 0    50   ~ 0
@@ -331,33 +318,7 @@ Wire Wire Line
 Text Label 5175 4475 3    50   ~ 0
 AB-6
 Wire Wire Line
-	1375 5725 1150 5725
-Text Label 1150 5725 0    50   ~ 0
-AB-7
-Wire Wire Line
-	1375 5825 1150 5825
-Text Label 1150 5825 0    50   ~ 0
-AB-8
-Wire Wire Line
-	1375 5925 1150 5925
-Text Label 1150 5925 0    50   ~ 0
-AB-9
-Wire Wire Line
-	1375 6025 1150 6025
-Text Label 1150 6025 0    50   ~ 0
-AB-10
-Wire Wire Line
-	3450 4075 3450 4300
-Text Label 3450 4300 1    50   ~ 0
-AB-8
-Wire Wire Line
-	2900 4050 2900 4275
-Text Label 2900 4275 1    50   ~ 0
-AB-9
-Wire Wire Line
 	2250 4075 2250 4300
-Text Label 2250 4300 1    50   ~ 0
-AB-10
 Text Label 2600 5025 2    50   ~ 0
 DB-0
 Wire Wire Line
@@ -888,8 +849,6 @@ Text Label 5275 2575 0    50   ~ 0
 TXT
 Wire Wire Line
 	6200 2525 5975 2525
-Text Label 5975 2525 0    50   ~ 0
-AB-8
 Wire Wire Line
 	6800 2625 6800 4875
 Wire Wire Line
@@ -1255,36 +1214,20 @@ F 3 "" H 14275 4350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	13100 2175 13100 1975
-Text Label 13100 1975 1    50   ~ 0
-RD7
 Wire Wire Line
 	13000 2175 13000 1975
-Text Label 13000 1975 1    50   ~ 0
-RD6
 Wire Wire Line
 	12900 2175 12900 1975
-Text Label 12900 1975 1    50   ~ 0
-RD3
 Wire Wire Line
 	12800 2175 12800 1975
-Text Label 12800 1975 1    50   ~ 0
-RD2
 Wire Wire Line
 	12700 2175 12700 1975
-Text Label 12700 1975 1    50   ~ 0
-RD0
 Wire Wire Line
 	12600 2175 12600 1975
-Text Label 12600 1975 1    50   ~ 0
-RD1
 Wire Wire Line
 	12500 2175 12500 1975
-Text Label 12500 1975 1    50   ~ 0
-RD4
 Wire Wire Line
 	12400 2175 12400 1975
-Text Label 12400 1975 1    50   ~ 0
-RD5
 Wire Wire Line
 	13400 2675 13525 2675
 $Comp
@@ -1531,8 +1474,6 @@ Wire Wire Line
 	16350 2950 16350 3075
 Wire Wire Line
 	16850 2950 16850 3075
-Text Label 15575 3450 2    50   ~ 0
-TDO
 $Comp
 L power:VCC #PWR0115
 U 1 1 5F91CA1D
@@ -1579,8 +1520,6 @@ Wire Wire Line
 	19700 2650 20300 2650
 Text Label 18925 1950 2    50   ~ 0
 TPIN
-Text Label 20300 2650 0    50   ~ 0
-TDI
 $Comp
 L Device:D U107
 U 1 1 5F9BEB27
@@ -2133,8 +2072,6 @@ Wire Wire Line
 	8425 6650 6125 6650
 Wire Wire Line
 	6125 6650 6125 7500
-Wire Wire Line
-	8450 5950 8550 5950
 Wire Wire Line
 	8550 5950 8550 6775
 Wire Wire Line
@@ -3202,10 +3139,6 @@ Wire Wire Line
 Wire Wire Line
 	19175 7350 19175 7950
 NoConn ~ 18950 8325
-Text Label 17250 8425 2    50   ~ 0
-~TM2
-Text Label 17750 7350 2    50   ~ 0
-~TM1
 $Comp
 L power:VCC #PWR0133
 U 1 1 625B41BF
@@ -3464,8 +3397,6 @@ Wire Wire Line
 	7825 15025 8650 15025
 Wire Wire Line
 	8600 14625 8650 14625
-Text Label 8650 14625 0    50   ~ 0
-~BUSRQ
 Text Label 8650 15025 0    50   ~ 0
 BUSRQ
 Wire Wire Line
@@ -3993,4 +3924,77 @@ Text GLabel 4700 9625 2    50   Input ~ 0
 PO
 NoConn ~ 2700 9325
 NoConn ~ 2700 9225
+Text GLabel 12400 1975 1    50   Input ~ 0
+RD5
+Text GLabel 12500 1975 1    50   Input ~ 0
+RD4
+Text GLabel 12600 1975 1    50   Input ~ 0
+RD1
+Text GLabel 12700 1975 1    50   Input ~ 0
+RD0
+Text GLabel 12800 1975 1    50   Input ~ 0
+RD2
+Text GLabel 12900 1975 1    50   Input ~ 0
+RD3
+Text GLabel 13000 1975 1    50   Input ~ 0
+RD6
+Text GLabel 13100 1975 1    50   Input ~ 0
+RD7
+Text GLabel 8650 14625 2    50   Input ~ 0
+~BUSRQ
+Text GLabel 5975 2525 0    50   Input ~ 0
+AB-8
+Wire Wire Line
+	8425 5950 8550 5950
+NoConn ~ 8425 6050
+NoConn ~ 8425 6150
+NoConn ~ 17250 8225
+NoConn ~ 17250 8525
+Text GLabel 17750 7350 0    50   Input ~ 0
+~TM1
+Text GLabel 17250 8425 0    50   Input ~ 0
+~TM2
+Text GLabel 20300 2650 2    50   Input ~ 0
+TDI
+Text GLabel 15550 3450 0    50   Input ~ 0
+TDO
+Text GLabel 1150 5025 0    50   Input ~ 0
+AB-0
+Text GLabel 1150 5725 0    50   Input ~ 0
+AB-7
+Wire Wire Line
+	1375 5725 1150 5725
+$Comp
+L 2732-memory_eprom:2716-Memory_EPROM U453
+U 1 1 5EFE9032
+P 1575 4925
+F 0 "U453" H 1875 5050 59  0000 C CNN
+F 1 "2716-Memory_EPROM" H 1625 5425 59  0001 L BNN
+F 2 "Package_DIP:DIP-24_W10.16mm_LongPads" H 1625 6025 50  0001 C CNN
+F 3 "" H 1975 4175 50  0001 C CNN
+	1    1575 4925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 4300 750  4300
+Wire Wire Line
+	750  4300 750  6025
+Wire Wire Line
+	750  6025 1375 6025
+Wire Wire Line
+	2900 4525 800  4525
+Wire Wire Line
+	800  4525 800  5925
+Wire Wire Line
+	800  5925 1375 5925
+Wire Wire Line
+	2900 4050 2900 4525
+Wire Wire Line
+	3450 4600 850  4600
+Wire Wire Line
+	850  4600 850  5825
+Wire Wire Line
+	850  5825 1375 5825
+Wire Wire Line
+	3450 4075 3450 4600
 $EndSCHEMATC
