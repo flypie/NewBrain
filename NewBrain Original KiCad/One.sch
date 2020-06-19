@@ -156,12 +156,10 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 2225 2100 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2700 2100 2525 2100
-Text Label 1075 2100 0    50   ~ 0
-RC3
 Wire Wire Line
 	2700 2300 2375 2300
 Text Label 2375 2300 0    50   ~ 0
-CRDO
+LDB-0
 Wire Wire Line
 	3625 2000 3375 2000
 Wire Wire Line
@@ -273,12 +271,6 @@ Wire Wire Line
 	3000 3450 3000 3050
 Wire Wire Line
 	3550 3475 3550 3050
-Text Label 2350 3050 0    50   ~ 0
-RC2
-Text Label 3000 3050 0    50   ~ 0
-RC1
-Text Label 3550 3050 0    50   ~ 0
-RC0
 Wire Wire Line
 	1375 5025 1150 5025
 Wire Wire Line
@@ -411,8 +403,6 @@ Wire Wire Line
 	2475 7200 1100 7200
 Text Label 1100 7000 0    50   ~ 0
 TXT
-Text Label 1100 7200 0    50   ~ 0
-UCR
 Wire Wire Line
 	4125 6225 3900 6225
 $Comp
@@ -633,12 +623,6 @@ Wire Wire Line
 	2400 8475 2400 7825
 Wire Wire Line
 	2400 7825 2700 7825
-Wire Wire Line
-	2700 8025 2600 8025
-Wire Wire Line
-	2600 8025 2600 7425
-Wire Wire Line
-	2600 7425 4175 7425
 Wire Wire Line
 	1775 9250 2000 9250
 Wire Wire Line
@@ -863,8 +847,6 @@ Wire Wire Line
 Connection ~ 7325 4875
 Wire Wire Line
 	7575 3625 7325 3625
-Text Label 7325 3625 2    50   ~ 0
-TVSD
 $Comp
 L 74xx:74LS08 U438
 U 2 1 5F29EA53
@@ -2026,8 +2008,6 @@ Wire Wire Line
 	7150 6525 7900 6525
 Wire Wire Line
 	8100 6850 8300 6850
-Text Label 8300 6850 2    50   ~ 0
-UCR
 Connection ~ 7300 6250
 Wire Wire Line
 	7025 7425 7850 7425
@@ -2787,11 +2767,11 @@ F 3 "~" H 19325 10125 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:Q_PNP_EBC Q1
+L Device:Q_PNP_EBC Q110
 U 1 1 619E4661
 P 19000 10575
-F 0 "Q1" H 19225 10525 50  0000 L CNN
-F 1 "Q_PNP_EBC" H 19225 10575 50  0000 L CNN
+F 0 "Q110" H 19225 10525 50  0000 L CNN
+F 1 "ZTC212" H 19225 10575 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-92_Inline" H 19200 10675 50  0001 C CNN
 F 3 "~" H 19000 10575 50  0001 C CNN
 	1    19000 10575
@@ -2899,10 +2879,6 @@ Wire Wire Line
 Connection ~ 18900 10800
 Text Label 19350 10800 0    50   ~ 0
 CMPVID
-Text Label 19350 11425 0    50   ~ 0
-K12
-Text Label 19350 11125 0    50   ~ 0
-K11
 $Comp
 L power:GND #PWR0132
 U 1 1 62273DDC
@@ -2941,11 +2917,11 @@ Wire Wire Line
 Wire Wire Line
 	19450 8275 19450 8225
 $Comp
-L Device:R R22
+L Device:R R81
 U 1 1 62339463
 P 19600 8225
-F 0 "R22" V 19850 8200 50  0000 C CNN
-F 1 "R" V 19750 8200 50  0000 C CNN
+F 0 "R81" V 19850 8200 50  0000 C CNN
+F 1 "3.3" V 19750 8200 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical" V 19530 8225 50  0001 C CNN
 F 3 "~" H 19600 8225 50  0001 C CNN
 	1    19600 8225
@@ -3100,8 +3076,6 @@ Wire Wire Line
 	1300 11900 1400 11900
 Wire Wire Line
 	1200 12775 1200 13050
-Text Label 1200 13050 0    50   ~ 0
-UCR
 Wire Wire Line
 	3250 11750 3250 12875
 Wire Wire Line
@@ -3111,8 +3085,6 @@ Wire Wire Line
 Wire Wire Line
 	3250 12875 3250 13075
 Connection ~ 3250 12875
-Text Label 3250 13075 0    50   ~ 0
-RC3
 Wire Wire Line
 	3250 11650 3475 11650
 Wire Wire Line
@@ -3125,12 +3097,6 @@ Wire Wire Line
 	3250 11450 3925 11450
 Wire Wire Line
 	3925 11450 3925 13075
-Text Label 3475 13075 0    50   ~ 0
-RC2
-Text Label 3700 13075 0    50   ~ 0
-RC1
-Text Label 3925 13075 0    50   ~ 0
-RC0
 Wire Wire Line
 	2250 11450 2175 11450
 Wire Wire Line
@@ -3169,10 +3135,10 @@ F 3 "74xx/74ls86.pdf" H 5275 11800 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R R13
+L Device:R R71
 U 1 1 62A6BC14
 P 4975 11650
-F 0 "R13" H 5075 11700 50  0000 L CNN
+F 0 "R71" H 5075 11700 50  0000 L CNN
 F 1 "470" H 5075 11650 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical" V 4905 11650 50  0001 C CNN
 F 3 "~" H 4975 11650 50  0001 C CNN
@@ -3662,8 +3628,6 @@ F 3 "" H 17375 2250 50  0001 C CNN
 	1    17375 2250
 	-1   0    0    1   
 $EndComp
-Text Label 17375 2850 0    50   ~ 0
-V0
 $Comp
 L power:GND #PWR0243
 U 1 1 66DAC34D
@@ -3857,10 +3821,6 @@ Text GLabel 4125 1650 0    50   Input ~ 0
 Text GLabel 3200 1050 2    50   Input ~ 0
 1\8
 Wire Wire Line
-	5575 2275 28000 2275
-Wire Wire Line
-	28000 2275 28000 18525
-Wire Wire Line
 	3325 1350 3200 1350
 Wire Wire Line
 	3200 1350 3200 1050
@@ -3932,8 +3892,6 @@ Connection ~ 3925 11450
 Connection ~ 3925 10650
 Wire Wire Line
 	3925 10650 2025 10650
-Text Label 4175 7425 0    50   ~ 0
-RDDK
 Wire Wire Line
 	2700 7925 2500 7925
 Wire Wire Line
@@ -3965,4 +3923,38 @@ Text GLabel 4000 9125 2    50   Input ~ 0
 +12
 Text GLabel 2700 9125 0    50   Input ~ 0
 -12I
+Text GLabel 1100 7200 0    50   Input ~ 0
+UCR
+Text GLabel 8300 6850 2    50   Input ~ 0
+UCR
+Text GLabel 1200 13050 2    50   Input ~ 0
+UCR
+Text GLabel 7325 3625 0    50   Input ~ 0
+TVSD
+Text GLabel 19350 11125 2    50   Input ~ 0
+K11
+Text GLabel 19350 11425 2    50   Input ~ 0
+K12
+Text GLabel 3925 13075 2    50   Input ~ 0
+RC0
+Text GLabel 3700 13075 2    50   Input ~ 0
+RC1
+Text GLabel 3475 13075 2    50   Input ~ 0
+RC2
+Text GLabel 3250 13075 2    50   Input ~ 0
+RC3
+Text GLabel 3550 3050 2    50   Input ~ 0
+RC0
+Text GLabel 3000 3050 2    50   Input ~ 0
+RC1
+Text GLabel 2350 3050 2    50   Input ~ 0
+RC2
+Text GLabel 1075 2100 0    50   Input ~ 0
+RC3
+Text Notes 2400 2450 0    50   ~ 0
+CRD0 on schematic.  LDB-0 following traces.
+Text GLabel 2700 8025 0    50   Input ~ 0
+RDDK
+Text GLabel 17375 2850 2    50   Input ~ 0
+V0A
 $EndSCHEMATC
