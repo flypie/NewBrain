@@ -3245,8 +3245,6 @@ Wire Wire Line
 	7825 15025 8650 15025
 Wire Wire Line
 	8600 14625 8650 14625
-Text Label 8650 15025 0    50   ~ 0
-BUSRQ
 Wire Wire Line
 	6950 15125 6700 15125
 Text Label 6700 15125 2    50   ~ 0
@@ -3957,4 +3955,6 @@ Text GLabel 2700 8025 0    50   Input ~ 0
 RDDK
 Text GLabel 17375 2850 2    50   Input ~ 0
 V0A
+Text GLabel 8650 15025 2    50   Input ~ 0
+BUSRQ
 $EndSCHEMATC
