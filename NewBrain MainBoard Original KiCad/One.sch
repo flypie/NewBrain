@@ -396,7 +396,6 @@ Wire Wire Line
 Connection ~ 3125 7100
 Text Label 3300 7100 0    50   ~ 0
 TXTQ
-NoConn ~ 1375 6425
 Wire Wire Line
 	2475 7000 1100 7000
 Wire Wire Line
@@ -1371,7 +1370,7 @@ U 1 1 5F8CEA90
 P 15800 2800
 F 0 "C104" H 15675 2725 50  0000 R CNN
 F 1 "47uf" H 15675 2825 50  0000 R CNN
-F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 15838 2650 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D4.0mm_P1.50mm" H 15838 2650 50  0001 C CNN
 F 3 "~" H 15800 2800 50  0001 C CNN
 	1    15800 2800
 	-1   0    0    1   
@@ -2727,8 +2726,8 @@ L Device:C C120
 U 1 1 619D576D
 P 19050 9425
 F 0 "C120" V 18775 9425 50  0000 C CNN
-F 1 "0.1" V 18875 9425 50  0000 C CNN
-F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 19088 9275 50  0001 C CNN
+F 1 "0.1uF 50V" V 18875 9425 50  0000 C CNN
+F 2 "Capacitor_THT:C_Axial_L3.8mm_D2.6mm_P7.50mm_Horizontal" H 19088 9275 50  0001 C CNN
 F 3 "~" H 19050 9425 50  0001 C CNN
 	1    19050 9425
 	0    1    1    0   
@@ -2739,7 +2738,7 @@ U 1 1 619D6901
 P 19050 9725
 F 0 "C119" V 18750 9725 50  0000 C CNN
 F 1 "47uf" V 18850 9725 50  0000 C CNN
-F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 19088 9575 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D4.0mm_P1.50mm" H 19088 9575 50  0001 C CNN
 F 3 "~" H 19050 9725 50  0001 C CNN
 	1    19050 9725
 	0    1    1    0   
@@ -3765,7 +3764,7 @@ Wire Wire Line
 	850  5825 1375 5825
 Wire Wire Line
 	3450 4075 3450 4600
-Text Label 1375 6325 2    50   ~ 0
+Text Label 850  6350 0    50   ~ 0
 UCR
 NoConn ~ 7025 6050
 NoConn ~ 10125 6150
@@ -3895,11 +3894,11 @@ Wire Wire Line
 Wire Wire Line
 	2500 7925 2500 7525
 $Comp
-L Device:R_Network03 RN66
+L Device:R_Network03 RN61
 U 1 1 62260EA2
 P 5300 7625
-F 0 "RN66" V 4925 7625 50  0000 C CNN
-F 1 "R_Network03" V 5025 7625 50  0000 C CNN
+F 0 "RN61" V 4925 7625 50  0000 C CNN
+F 1 "22K" V 5025 7625 50  0000 C CNN
 F 2 "Resistor_THT:R_Array_SIP5" V 5575 7625 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 5300 7625 50  0001 C CNN
 	1    5300 7625
@@ -3957,4 +3956,64 @@ Text GLabel 17375 2850 2    50   Input ~ 0
 V0A
 Text GLabel 8650 15025 2    50   Input ~ 0
 BUSRQ
+$Comp
+L Connector_Generic:Conn_01x03 J102
+U 1 1 5F51C9E8
+P 650 6450
+F 0 "J102" H 550 6100 50  0000 C CNN
+F 1 "Conn_01x03" H 550 6200 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 650 6450 50  0001 C CNN
+F 3 "~" H 650 6450 50  0001 C CNN
+	1    650  6450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1375 6325 1150 6325
+Wire Wire Line
+	1150 6325 1150 6450
+Wire Wire Line
+	1150 6450 850  6450
+$Comp
+L power:GND #PWR0201
+U 1 1 5F601A1E
+P 850 6550
+F 0 "#PWR0201" H 850 6300 50  0001 C CNN
+F 1 "GND" V 850 6375 50  0000 R CNN
+F 2 "" H 850 6550 50  0001 C CNN
+F 3 "" H 850 6550 50  0001 C CNN
+	1    850  6550
+	0    -1   -1   0   
+$EndComp
+Text Label 850  6750 0    50   ~ 0
+UCR
+$Comp
+L Connector_Generic:Conn_01x03 J103
+U 1 1 5F603BC1
+P 650 6850
+F 0 "J103" H 550 6500 50  0000 C CNN
+F 1 "Conn_01x03" H 550 6600 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 650 6850 50  0001 C CNN
+F 3 "~" H 650 6850 50  0001 C CNN
+	1    650  6850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1150 6850 850  6850
+$Comp
+L power:GND #PWR0202
+U 1 1 5F603BCC
+P 850 6950
+F 0 "#PWR0202" H 850 6700 50  0001 C CNN
+F 1 "GND" V 850 6775 50  0000 R CNN
+F 2 "" H 850 6950 50  0001 C CNN
+F 3 "" H 850 6950 50  0001 C CNN
+	1    850  6950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1150 6850 1150 6650
+Wire Wire Line
+	1150 6650 1375 6650
+Wire Wire Line
+	1375 6650 1375 6425
 $EndSCHEMATC
